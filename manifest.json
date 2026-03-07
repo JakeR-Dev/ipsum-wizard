@@ -1,0 +1,21 @@
+{
+  "name": "Ipsum Wizard",
+  "description": "Conjure dummy text whenever you need it.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "ipsum-wizard.png"
+  },
+  "icons": {
+    "16": "ipsum-wizard.png",
+    "32": "ipsum-wizard.png",
+    "48": "ipsum-wizard.png",
+    "128": "ipsum-wizard.png"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }]
+}
