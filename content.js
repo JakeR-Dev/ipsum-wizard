@@ -76,6 +76,8 @@ function insertIntoContentEditable(el, text) {
   el.dispatchEvent(new Event("input", { bubbles: true }));
 }
 
+// TODO: handle edge cases like WP and Drupal richtext editors
+
 // communicate with active tab to get cursor position and insert text
 chrome.runtime.onMessage.addListener((msg) => {
   if (msg.action !== "insert") return;
