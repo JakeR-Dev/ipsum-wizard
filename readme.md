@@ -74,4 +74,3 @@ Try this:
 
 - Add "Copy to clipboard" mode.
 - Add varied lorem text.
-
