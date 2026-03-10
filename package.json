@@ -1,0 +1,27 @@
+{
+  "name": "ipsum-wizard",
+  "version": "1.2.0",
+  "description": "Conjure dummy text whenever you need it.",
+  "main": "dist/content.js",
+  "scripts": {
+    "build": "tsc",
+    "build:prod": "tsc --sourceMap false",
+    "watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JakeR-Dev/ipsum-wizard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JakeR-Dev/ipsum-wizard/issues"
+  },
+  "homepage": "https://github.com/JakeR-Dev/ipsum-wizard#readme",
+  "devDependencies": {
+    "@types/chrome": "^0.1.37",
+    "typescript": "^5.9.3"
+  }
+}
