@@ -1,0 +1,96 @@
+:root body {
+  --primary-color: #4a90e2;
+  --secondary-color: #7635D6;
+  --color-charcoal: #363636;
+  --color-gray: #696969;
+  --font-color: #f5f5f5;
+  --font-family: 'Arial', sans-serif;
+  --font-size: 14px;
+  --border-radius: 5px;
+  --padding: 16px;
+  --margin: 16px;
+}
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--font-color);
+  background: var(--color-charcoal);
+  padding: var(--padding);
+  border: 1px solid var(--color-gray);
+  border-radius: var(--border-radius);
+  margin: 0;
+  outline: none;
+  width: 220px;
+}
+h1, h5, p {
+  margin: 0 0 var(--margin) 0;
+}
+h1, h2 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 24px;
+  white-space: nowrap;
+}
+h2 {
+  font-size: 16px;
+}
+form {
+  padding-top: var(--padding);
+  border-top: 1px solid var(--font-color);
+  margin-bottom: 0;
+}
+form fieldset {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: var(--margin);
+  border: none;
+  padding: 0;
+  margin: 0 0 var(--margin) 0;
+}
+form input {
+  width: 50px;
+  height: 32px;
+  background: transparent;
+  border: 1px solid var(--font-color);
+  outline: none;
+  color: var(--font-color);
+  text-align: center;
+  border-radius: var(--border-radius);
+}
+form button {
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--font-color);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 10px var(--padding);
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 12px;
+}
+form button span {
+  display: inline-block;
+  line-height: 1;
+  font-size: 16px;
+  vertical-align: middle;
+  margin-top: -6px;
+  margin-left: 4px;
+  will-change: transrorm;
+}
+@keyframes conjure {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+form button:hover span {
+  animation: conjure 0.25s ease-in-out infinite;
+}
