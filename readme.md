@@ -36,9 +36,16 @@ Conjure dummy text whenever you need it.
 
 - `manifest.json`: extension metadata, permissions, popup registration, and content script setup.
 - `popup.html`: popup UI.
-- `popup.css`: popup styles.
-- `popup.js`: lorem generation + message sending to active tab.
-- `content.js`: receives message and inserts text at the active caret/selection.
+- `src/popup.css`: popup styles.
+- `src/popup.ts`: lorem generation + message sending to active tab.
+- `src/content.ts`: receives message and inserts text at the active caret/selection.
+- `dist/*.js`: compiled JavaScript output used by the extension at runtime.
+
+## Build (TypeScript)
+
+- `npm run build`: one-time TypeScript compile (`src` -> `dist`).
+- `npm run watch`: recompile automatically while developing.
+- `npm run build:prod`: compile without source maps for packaging.
 
 ## Known limitations
 
@@ -69,7 +76,7 @@ Try this:
 ## Development notes
 
 - Manifest version: `3`
-- Current extension version: `1.1.0`
+- Current extension version: `1.2.0`
 
 ## Ideas for next improvements
 
