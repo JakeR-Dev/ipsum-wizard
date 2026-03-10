@@ -73,4 +73,4 @@ Try this:
 ## Ideas for next improvements
 
 - Add "Copy to clipboard" mode.
-- Add varied lorem text.
+- Add support for iframe-based richtext editors.
