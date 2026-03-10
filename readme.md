@@ -9,7 +9,7 @@ Conjure dummy text whenever you need it.
 - Supports:
 	- `<input>` fields
 	- `<textarea>` fields
-	- Rich text editors using `contenteditable`
+	- Rich text editors using `contenteditable` (raw-text mode only)
 
 ## Install (Chrome)
 
@@ -20,8 +20,8 @@ Conjure dummy text whenever you need it.
 
 ## How to use
 
-1. Open any normal web page.
-2. Click into a text input, textarea, or rich text editor.
+1. Open any web page.
+2. Click into a text input, textarea, or rich text editor (in raw-text mode).
 3. Click the **Ipsum Wizard** extension icon.
 4. Choose the number of paragraphs.
 5. Click **Conjure**.
@@ -64,11 +64,12 @@ Try this:
 
 - Make sure the editor is focused and has a visible caret.
 - Some sites use protected iframe editors that extensions cannot access.
+- Try using the raw-text mode inside the rich text editor instead.
 
 ## Development notes
 
 - Manifest version: `3`
-- Current extension version: `1.0`
+- Current extension version: `1.1.0`
 
 ## Ideas for next improvements
 
